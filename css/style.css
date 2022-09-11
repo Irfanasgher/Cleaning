@@ -1,0 +1,523 @@
+body {
+	overflow-x: hidden;
+}
+
+/* Navbar CSS Start */
+#nav .navbar {
+	background-color: #3185fc !important;
+}
+#nav .navbar .navbar-nav .nav-item .nav-link {
+	color: white;
+}
+#nav .navbar form .button {
+	outline: none;
+	border: 0;
+	border-radius: 50px;
+	background-color: #5097fc;
+	color: white;
+	text-decoration: none;
+	/* box-shadow: 0px 0px 3px #000; */
+	transition: all 0.3s ease-in-out;
+}
+#nav .navbar form .button:hover {
+	background-color: white;
+	color: #5097fc;
+	transition: all 0.3s ease-in-out;
+}
+#nav .navbar-toggler {
+	border: 2px solid white !important;
+	padding: 10px 15px !important;
+	margin-right: 20px;
+	margin-top: -30px;
+	color: white;
+	cursor: pointer !important;
+	outline: none !important;
+}
+#nav .navbar-toggler .navbar-toggler-icon {
+	background-color: white;
+}
+/* Navbar CSS End */
+
+/* subscription CSS Start */
+
+#subscription {
+	background: #3185fc;
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 400px;
+	color: white;
+}
+#subscription p {
+	font-size: 14px;
+}
+
+#subscription input {
+	width: 300px;
+	padding: 8px;
+	border-radius: 10px;
+	outline: none;
+	border: 0;
+	background-color: #5097fc;
+}
+#subscription input::placeholder {
+	color: white;
+	padding-left: 12px;
+}
+#subscription .image img {
+	height: 400px;
+}
+@media (max-width: 450px) {
+	#subscription {
+		background: #3185fc;
+		background-size: cover;
+		background-position: center;
+		width: 100vw;
+		height: 700px;
+		color: white;
+	}
+	#subscription .image img {
+		height: 200px !important;
+		margin-top: 50px;
+	}
+	#subscription input {
+		width: 240px !important;
+	}
+}
+
+/* subscription CSS End */
+
+/* Footer CSS Start */
+
+footer.page-footer .logo img {
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 70px;
+}
+footer.page-footer .list-data h5 {
+	color: #3185fc;
+}
+footer.page-footer .list-data ul li {
+	padding-top: 15px;
+}
+footer.page-footer .list-data ul li a {
+	/* color: #afaaaa; */
+	text-decoration: none;
+}
+footer.page-footer .footer-copyright {
+	color: white;
+	background-color: #3185fc;
+}
+/* Footer CSS End */
+
+/* Banner CSS Start */
+
+#carousal-slider {
+	background-image: url("../assets//banner-bg.png");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+#carousal-slider #main-container {
+	background-color: white;
+	height: 593px;
+	border-radius: 25px;
+	padding-right: 0;
+}
+#carousal-slider h1 {
+	color: #3185fc;
+	font-weight: bold;
+	width: 90%;
+	margin-left: 5%;
+}
+#carousal-slider p {
+	color: black;
+	font-size: 26px;
+	width: 80%;
+	margin-left: 5%;
+}
+#carousal-slider button {
+	background-color: #f46632;
+	color: white;
+	border-radius: 13px;
+	outline: none;
+	border: 0;
+	margin-left: 5%;
+	width: 270px;
+}
+#carousal-slider h2 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 40px;
+	color: #e8f2ff;
+}
+#carousal-slider .carousel-indicators {
+	position: relative;
+	top: 60px !important;
+	z-index: 111;
+}
+#carousal-slider .carousel-indicators li {
+	height: 20px;
+	width: 60px;
+	border-radius: 50px;
+	border: 2px solid #3185fc;
+	background-color: white;
+	z-index: 111;
+	margin-left: 15px;
+}
+#carousal-slider .carousel-indicators li.active {
+	background-color: #3185fc;
+}
+#carousal-slider #main-container .image {
+	height: 593px;
+	width: 97.5%;
+	border-radius: 20px;
+}
+
+@media (max-width: 450px) {
+	#carousal-slider h1 {
+		font-size: 25px;
+	}
+	#carousal-slider p {
+		font-size: 16px;
+	}
+	#carousal-slider #main-container .image {
+		height: 293px;
+		width: 80%;
+		margin-left: 5%;
+	}
+}
+
+/* Banner CSS End */
+
+/* Our Value CSS Start */
+
+#our-value {
+	background-color: #f8f8f8;
+	width: 100%;
+	padding: 50px 0px 150px;
+}
+
+#our-value .layout {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	grid-template-rows: 50px 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#our-value input[type="radio"] {
+	display: none;
+}
+
+#our-value label.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: 1px solid #3185fc;
+	background: white;
+	user-select: none;
+	transition: background 0.4s, padding-left 0.2s;
+	padding-left: 0;
+	/* border-radius: 10px; */
+}
+#our-value label.last-nav {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#our-value label.first-nav {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#our-value input[type="radio"]:checked + .page + label.nav {
+	background: #3185fc;
+	color: #ffffff;
+	/* padding-left: 20px; */
+}
+#our-value input[type="radio"]:checked + .page + label.nav span {
+	/* padding-left: 20px; */
+}
+#our-value input[type="radio"]:checked + .page + label.nav svg {
+	opacity: 1;
+}
+#our-value label.nav span {
+	padding-left: 0px;
+	position: relative;
+}
+#our-value label.nav svg {
+	left: 0;
+	top: -3px;
+	position: absolute;
+	width: 15px;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+#our-value .page {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-column-end: span 3;
+	padding: 0px 20px;
+	display: flex;
+	align-items: center;
+}
+
+#our-value .page-contents > * {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.2s, transform 0.2s;
+}
+#our-value .page-contents > *:nth-child(1) {
+	transition-delay: 0.4s;
+}
+#our-value .page-contents > *:nth-child(2) {
+	transition-delay: 0.6s;
+}
+#our-value .page-contents > *:nth-child(3) {
+	transition-delay: 0.8s;
+}
+#our-value .page-contents > *:nth-child(4) {
+	transition-delay: 1s;
+}
+#our-value .page-contents > *:nth-child(5) {
+	transition-delay: 1.2s;
+}
+#our-value .page-contents > *:nth-child(6) {
+	transition-delay: 1.4s;
+}
+#our-value .page-contents > *:nth-child(7) {
+	transition-delay: 1.6s;
+}
+#our-value .page-contents > *:nth-child(8) {
+	transition-delay: 1.8s;
+}
+#our-value .page-contents > *:nth-child(9) {
+	transition-delay: 2s;
+}
+#our-value .page-contents > *:nth-child(10) {
+	transition-delay: 2.2s;
+}
+#our-value .page-contents > *:nth-child(11) {
+	transition-delay: 2.4s;
+}
+#our-value .page-contents > *:nth-child(12) {
+	transition-delay: 2.6s;
+}
+#our-value .page-contents > *:nth-child(13) {
+	transition-delay: 2.8s;
+}
+#our-value .page-contents > *:nth-child(14) {
+	transition-delay: 3s;
+}
+#our-value .page-contents > *:nth-child(15) {
+	transition-delay: 3.2s;
+}
+#our-value .page-contents > *:nth-child(16) {
+	transition-delay: 3.4s;
+}
+#our-value .page-contents > *:nth-child(17) {
+	transition-delay: 3.6s;
+}
+#our-value .page-contents > *:nth-child(18) {
+	transition-delay: 3.8s;
+}
+#our-value .page-contents > *:nth-child(19) {
+	transition-delay: 4s;
+}
+#our-value .page-contents > *:nth-child(20) {
+	transition-delay: 4.2s;
+}
+
+#our-value input[type="radio"] + .page {
+	transition: transform 0.2s;
+	transform: translateX(100%);
+}
+
+#our-value input[type="radio"]:checked + .page {
+	transform: translateX(0%);
+}
+#our-value input[type="radio"]:checked + .page .page-contents > * {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+#our-value .page-contents {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+#our-value #main-container {
+	width: 100%;
+	padding: 50px 100px 100px;
+	border-radius: 25px;
+	background-color: white;
+}
+#our-value #main-container h1 {
+	color: #e8f2ff;
+	font-weight: bold;
+	font-size: 80px;
+}
+#our-value #main-container h4 {
+	color: #3185fc;
+	font-weight: bold;
+	margin-top: -60px;
+	text-shadow: 0px 0px 1px;
+}
+#our-value #main-container p {
+	text-align: justify;
+}
+
+@media (max-width: 450px) {
+	#our-value #main-container {
+		width: 100%;
+		padding: 50px 10px 10px;
+		border-radius: 25px;
+		background-color: white;
+	}
+	#our-value #main-container .span {
+		font-size: 10px !important;
+	}
+}
+/*
+#our-value #main-container .btn-group-justified {
+	border: 1px solid #3185fc;
+	border-radius: 10px;
+	overflow: hidden;
+}
+#our-value #main-container .btn-group-justified .btn {
+	border: 1px solid #3185fc;
+	color: black;
+}
+#our-value #main-container .btn-group-justified .btn.active,
+#our-value #main-container .btn-group-justified .btn.focus {
+	background-color: #3185fc;
+	color: white;
+} */
+
+/* Our Value CSS End */
+
+#services {
+	background-color: white;
+	width: 100%;
+	/* height: 700px; */
+}
+#services h1 {
+	color: #e8f2ff;
+	font-weight: bold;
+	font-size: 80px;
+}
+#services h4 {
+	color: #3185fc;
+	font-weight: bold;
+	margin-top: -60px;
+	text-shadow: 0px 0px 1px;
+}
+#services p {
+	text-align: justify;
+}
+#services .dry {
+	position: relative;
+	background-color: #f8f8f8;
+	border-radius: 8px;
+}
+#services .dry::before {
+	position: absolute;
+	content: "";
+	height: 70%;
+	width: 7px;
+	background-color: #3185fc;
+	border-radius: 5px;
+	left: -25px;
+}
+#services .dry h1 {
+	font-size: 25px;
+	text-align: left;
+	color: #3185fc;
+}
+
+/* Price CSS Start */
+
+#price {
+	background-color: #f8f8f8;
+	width: 100%;
+	padding: 50px 0px;
+}
+
+#price .layout {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	grid-template-rows: 50px 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+#price h1 {
+	color: #e8f2ff;
+	font-weight: bold;
+	font-size: 80px;
+}
+#price h4 {
+	color: #3185fc;
+	font-weight: bold;
+	margin-top: -60px;
+	text-shadow: 0px 0px 1px;
+}
+#price .card {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px;
+	transition: all 0.5s ease-in-out;
+}
+#price .card:hover {
+	box-shadow: 1px 1px 10px;
+	transition: all 0.5s ease-in-out;
+}
+#price .card h3 {
+	color: #3185fc;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#price .card h6 {
+	color: #3185fc;
+	font-weight: 400;
+}
+#price .card h2 {
+	font-weight: bold;
+	font-size: 45px;
+}
+#price .card button {
+	border-radius: 50px;
+	outline: none;
+	border: 0;
+	background-color: #3185fc;
+	border: 1px solid #3185fc;
+	color: white;
+	transition: all 0.3s ease-in-out;
+	width: 50%;
+	margin-left: 25%;
+}
+#price .card button:hover {
+	background-color: white;
+	color: #3185fc;
+	transition: all 0.3s ease-in-out;
+}
+.saperator {
+	align-items: center;
+	background-color: #3185fc;
+	color: white;
+	height: 100px;
+	font-size: 25px;
+	margin-top: 2rem;
+	border-radius: 5px;
+}
+#price>.container>p>a.btn{
+	text-align: left;
+	width: 100%;
+}
+
+/* Price CSS End */
